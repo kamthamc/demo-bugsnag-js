@@ -1,8 +1,16 @@
+import Bugsnag from '@bugsnag/js';
+import BugsnagPluginReact from '@bugsnag/plugin-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
+
+
+export const bugsnagClient = Bugsnag.createClient({
+  // ... rest of config omitted for simplicity
+  plugins: [new BugsnagPluginReact(React)],
+});
 
 ReactDOM.render(
   <React.StrictMode>

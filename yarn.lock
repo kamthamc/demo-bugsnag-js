@@ -1854,6 +1854,75 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bugsnag/browser@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "@bugsnag/browser@npm:7.5.4"
+  dependencies:
+    "@bugsnag/core": ^7.5.4
+  checksum: f880f5f6d26998cd6bf9ea9078b13cefd9d78b0029722db46d1d3d640a4e9ca0f0a1142622f66a27842390a745964bdcfdbc43ab7d680107c9b61f652fce5174
+  languageName: node
+  linkType: hard
+
+"@bugsnag/core@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "@bugsnag/core@npm:7.5.4"
+  dependencies:
+    "@bugsnag/cuid": ^3.0.0
+    "@bugsnag/safe-json-stringify": ^6.0.0
+    error-stack-parser: ^2.0.3
+    iserror: 0.0.2
+    stack-generator: ^2.0.3
+  checksum: cf43a6831b93a11456c3bab5cf7a946515d42c7a4b38ed2ea383994639c057c7ea7dc8205947b161f3536b33daeee6097560511616e607938d996fe5edda8fa9
+  languageName: node
+  linkType: hard
+
+"@bugsnag/cuid@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@bugsnag/cuid@npm:3.0.0"
+  checksum: 3f7ae944ef1c9839210f75e634e10f83fbec7c8afab2cc9e8d8babf57d50fc3ed23e78ad0775e6a11828beb9f72fc14028fdec59559634846fa843dea38e1e6a
+  languageName: node
+  linkType: hard
+
+"@bugsnag/js@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "@bugsnag/js@npm:7.5.4"
+  dependencies:
+    "@bugsnag/browser": ^7.5.4
+    "@bugsnag/node": ^7.5.4
+  checksum: cfc4dd867c18b3a677d68b5b461867e6bae69aa753dd406e9c4b2ed9cee4c748924b39e4b1189a4553423fb7d8b47545409e62abb4533225345a355195ab18df
+  languageName: node
+  linkType: hard
+
+"@bugsnag/node@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "@bugsnag/node@npm:7.5.4"
+  dependencies:
+    "@bugsnag/core": ^7.5.4
+    byline: ^5.0.0
+    error-stack-parser: ^2.0.2
+    iserror: ^0.0.2
+    pump: ^3.0.0
+    stack-generator: ^2.0.3
+  checksum: 2fe73d4fc23f2954d673ef794abde77cfbb20bb07292ca826aba5d12d2da8048d38a872378605d17ea09bcae934019144a0fce208d936f7779c10f1bdd086834
+  languageName: node
+  linkType: hard
+
+"@bugsnag/plugin-react@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "@bugsnag/plugin-react@npm:7.5.4"
+  peerDependencies:
+    "@bugsnag/core": ^7.0.0
+  checksum: bc1cfb61cff411778c0fb35986f0ef5bc7ec3f8cabcca618c423f1d22870d69c1638b71287a030bf39c0af4db364bdd5751fb85faa8e5fc692af3a752f334b81
+  languageName: node
+  linkType: hard
+
+"@bugsnag/safe-json-stringify@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@bugsnag/safe-json-stringify@npm:6.0.0"
+  checksum: ddb870881dd8533e64aa7d805324ff1ccc0f5f5cbac35ebd4dd4734767531619045417ad0a4995192d5efad22d227535af09111dbc0c7c2e8f937cd017cbc0e6
+  languageName: node
+  linkType: hard
+
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -4331,6 +4400,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"byline@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "byline@npm:5.0.0"
+  checksum: 84aec9f9db13b7cff15ded0fc0e3d0e147861c6e25a8827f3440326b8f516d6e6aa6c475bdbbad771a612b0d355b93b39fbfe4f8ed57c6eb3252a018d1306e3d
+  languageName: node
+  linkType: hard
+
 "bytes@npm:3.0.0":
   version: 3.0.0
   resolution: "bytes@npm:3.0.0"
@@ -5724,6 +5800,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "demo-bugsnag-js@workspace:."
   dependencies:
+    "@bugsnag/js": ^7.5.4
+    "@bugsnag/plugin-react": ^7.5.4
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -6191,7 +6269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"error-stack-parser@npm:^2.0.6":
+"error-stack-parser@npm:^2.0.2, error-stack-parser@npm:^2.0.3, error-stack-parser@npm:^2.0.6":
   version: 2.0.6
   resolution: "error-stack-parser@npm:2.0.6"
   dependencies:
@@ -8701,6 +8779,13 @@ fsevents@~2.1.2:
   version: 1.0.0
   resolution: "isarray@npm:1.0.0"
   checksum: b0ff31a290e783f7b3fb73f2951ee7fc2946dc197b05f73577dc77f87dc3be2e0f66007bedf069123d4e5c4b691e7c89a241f6ca06f0c0f4765cdac5aa4b4047
+  languageName: node
+  linkType: hard
+
+"iserror@npm:0.0.2, iserror@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "iserror@npm:0.0.2"
+  checksum: b474182344fcbbad3a45046cdbd200e60a5757f7eae0a9aa9bb5cf9515bd317c3e3f5ccc83511fbba65c5a0e67a0b44203fcd279ec0e9362e11b9d98a35e6570
   languageName: node
   linkType: hard
 
@@ -14102,6 +14187,15 @@ resolve@1.18.1:
   version: 0.1.8
   resolution: "stable@npm:0.1.8"
   checksum: a430967bb543d4d1a5cbec81b48034006a467464f5d4bdf72bd7279da406956e1f8edaa56aab74ec17cc4e56ee61668dc4f1b380255507cf2f70c6ba589f7c48
+  languageName: node
+  linkType: hard
+
+"stack-generator@npm:^2.0.3":
+  version: 2.0.5
+  resolution: "stack-generator@npm:2.0.5"
+  dependencies:
+    stackframe: ^1.1.1
+  checksum: 3755840159707d4e3126b707d16cd0e9c847b7cf617d10db19bca1d7d6b0ae63eb52b3abdf730858b412b22dd238715d924b1219af8c92dc82584ca10bb71e1c
   languageName: node
   linkType: hard
 
